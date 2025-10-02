@@ -1,0 +1,2 @@
+risk_id,title,category,likelihood,impact,controls
+R-001,Prompt Injection,Agentic,Medium,High,AGT-01|AGT-06|AGT-10
