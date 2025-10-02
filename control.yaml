@@ -1,0 +1,17 @@
+id: AGT-01
+title: Prompt & Policy Integrity
+category: agentic
+status: draft
+normative: MUST
+statement: >
+  System prompts and policy templates MUST be signed and verified at runtime. If signature verification fails, the agent MUST abort processing.
+tests:
+  - name: signature_verification
+    steps:
+      - attempt to load modified prompt
+      - expect: agent aborts with verification error and logs event_id
+mappings:
+  nist_ai_rmf: []
+  iso_42001: []
+  mitre_atlas: []
+  owasp_top10: []
